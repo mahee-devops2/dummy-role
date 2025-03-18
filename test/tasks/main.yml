@@ -1,0 +1,11 @@
+---
+# tasks file for test
+  - name: installning httpd services
+    yum:
+      name: httpd
+      state: installed
+
+  - name: startin httpd services
+    service:
+      name: httpd
+      state: started
